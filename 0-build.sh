@@ -47,10 +47,10 @@ cp -a $HOM/src/*.h $HOM/android-project/jni/src/
 
 # Zasoby
 mkdir $HOM/android-project/assets
-cp -a $HOM/src/*.bmp $HOM/android-project/assets/
+mkdir $HOM/android-project/assets/za
+cp -a $HOM/src/za/* $HOM/android-project/assets/za
 
 cd $HOM/android-project/
 sed -i 's+// "SDL2_image"+"SDL2_image"+' $HOM/android-project/src/org/libsdl/app/SDLActivity.java
-sed -i "s/APP_ABI/APP_PLATFORM := android-12\nAPP_ABI/" $HOM/android-project/jni/Application.mk
 sed -i -e 's/^LOCAL_SHARED_LIBRARIES.*/& SDL2_image/' $HOM/android-project/jni/src/Android.mk
 sed -i 's/YourSourceHere.c/main.c/' $HOM/android-project/jni/src/Android.mk

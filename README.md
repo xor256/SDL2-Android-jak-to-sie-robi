@@ -18,28 +18,27 @@ Nasz program jest w pliku program.tgz
 /main.c
 *.png *.bmp etc.
 
-drwxr-xr-x.  9 user user    4096 06-15 00:00 android-ndk-r12b
+Pliki i katalogi w ~/and
 
-drwxrwxr-x. 12 user user    4096 07-22 00:00 android-sdk-linux
+android-ndk-r12b
 
-lrwxrwxrwx.  1 user user      16 07-22 00:00 ndk -> android-ndk-r12b
+android-sdk-linux
 
--rw-rw-r--.  1 user user    5858 07-22 00:00 program.tgz
+ndk -> android-ndk-r12b
 
-lrwxrwxrwx.  1 user user      17 07-05 00:00 sdk -> android-sdk-linux
+program.tgz
 
--rw-r--r--.  1 user user 4136230 07-15 00:00 SDL2-2.0.4.tar.gz
+sdk -> android-sdk-linux
 
--rw-r--r--.  1 user user 7797848 07-22 10:48 SDL2_image-2.0.1.tar.gz
+SDL2-2.0.4.tar.gz
+
+SDL2_image-2.0.1.tar.gz
 
 Gdy rozpakujemy sdk i ndk powinniśmy uaktualnić android-17
 <p align="center">
   <img src='http://bankfotek.pl/thumb/2011670.jpeg' width="350"/>
 </p>
 
-Następnie zmieniamy ustawienia w pliku config-SDL2.sh
+Zmieniamy ustawienia w zerowym i uruchamiamy *0-build.sh* aby rozpakowac i przygotować cały projekt
 
-i uruchamiamy 0-build-SDL2.sh aby rozpakowac i przygotować cały projekt
-
-1-kompilacja-SDL2.sh
-
+1-komp.sh by skompilować projekt
