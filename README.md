@@ -19,11 +19,17 @@ Nasz program jest w pliku program.tgz
 *.png *.bmp etc.
 
 drwxr-xr-x.  9 user user    4096 06-15 00:00 android-ndk-r12b
+
 drwxrwxr-x. 12 user user    4096 07-22 00:00 android-sdk-linux
+
 lrwxrwxrwx.  1 user user      16 07-22 00:00 ndk -> android-ndk-r12b
+
 -rw-rw-r--.  1 user user    5858 07-22 00:00 program.tgz
+
 lrwxrwxrwx.  1 user user      17 07-05 00:00 sdk -> android-sdk-linux
+
 -rw-r--r--.  1 user user 4136230 07-15 00:00 SDL2-2.0.4.tar.gz
+
 -rw-r--r--.  1 user user 7797848 07-22 10:48 SDL2_image-2.0.1.tar.gz
 
 Gdy rozpakujemy sdk i ndk powinniśmy uaktualnić android-17
