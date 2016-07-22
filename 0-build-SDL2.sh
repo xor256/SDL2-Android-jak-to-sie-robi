@@ -1,20 +1,6 @@
 #!/bin/sh
 
-#=================== Ustawienia ===========================
-# katalog użytkownika, zmień
-HO=/home/tak
-LSDL2=SDL2-2.0.4
-LSDL2_image=SDL2_image-2.0.1
-
-LSDL2TGZ=SDL2-2.0.4.tar.gz
-LSDL2_imageTGZ=SDL2_image-2.0.1.tar.gz
-# ściągamy do katalogu ~/and https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
-# oraz http://dl.google.com/android/repository/android-ndk-r12b-linux-x86_64.zip
-# rozpakowujemy i uaktualniamy android-17 4.2.2
-# u mnie -t 4 = android-17
-# ./android list target | grep 'id:'
-NUMER=1
-#==========================================================
+source ./config-SDL2.sh
 
 HOM=$HO/and/build
 
@@ -49,3 +35,5 @@ mkdir $HOM/android-project/assets
 cp -a $HOM/src/*.bmp $HOM/android-project/assets/
 
 cd $HOM/android-project/
+sed -i 's+// "SDL2_image"+"SDL2_image"+' $HOM/android-project/src/org/libsdl/app/SDLActivity.java
+sed -i "s/APP_ABI/APP_PLATFORM := android-12\nAPP_ABI/" $HOM/android-project/jni/Application.mk

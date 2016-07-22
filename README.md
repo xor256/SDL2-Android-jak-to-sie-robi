@@ -21,3 +21,9 @@ Gdy rozpakujemy sdk i ndk powinniśmy uaktualnić android-17
   <img src='http://bankfotek.pl/thumb/2011670.jpeg' width="350"/>
 </p>
 
+Następnie zmieniamy ustawienia w pliku config-SDL2.sh
+
+i uruchamiamy 0-build-SDL2.sh aby rozpakowac i przygotować cały projekt
+
+1-kompilacja-SDL2.sh
+
