@@ -2,7 +2,7 @@
 
 #=================== Ustawienia ===========================
 # katalog użytkownika, zmień
-HO=/home/tak
+HO=/home/user
 LSDL2=SDL2-2.0.4
 LSDL2_image=SDL2_image-2.0.1
 
