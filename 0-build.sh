@@ -35,6 +35,7 @@ cd $HOM/android-project/jni
 # Linkujemy potrzebne nam biblioteki
 ln -s ../../SDL2-2.0.4 SDL
 ln -s ../../SDL2_image-2.0.1 SDL_image
+ln -s ../../SDL2_image-2.0.1/external/libwebp-0.3.0 webp
 
 # Wstawiamy nasz kod
 cd $HOM
@@ -51,3 +52,5 @@ cp -a $HOM/src/*.bmp $HOM/android-project/assets/
 cd $HOM/android-project/
 sed -i 's+// "SDL2_image"+"SDL2_image"+' $HOM/android-project/src/org/libsdl/app/SDLActivity.java
 sed -i "s/APP_ABI/APP_PLATFORM := android-12\nAPP_ABI/" $HOM/android-project/jni/Application.mk
+sed -i -e 's/^LOCAL_SHARED_LIBRARIES.*/& SDL2_image/' $HOM/android-project/jni/src/Android.mk
+sed -i 's/YourSourceHere.c/main.c/' $HOM/android-project/jni/src/Android.mk
