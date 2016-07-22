@@ -17,5 +17,7 @@ Nasz program jest w pliku program.tgz
 *.png *.bmp etc.
 
 Gdy rozpakujemy sdk i ndk powinniśmy uaktualnić android-17
-
+<p align="center">
+  <img src='http://bankfotek.pl/thumb/2011670.jpeg' width="350"/>
+</p>
 
