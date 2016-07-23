@@ -38,6 +38,7 @@ Gdy rozpakujemy sdk i ndk powinniśmy uaktualnić android-17
 <p align="center">
   <img src='http://bankfotek.pl/thumb/2011670.jpeg' width="350"/>
 </p>
+Nasz emulator powinien wygladać mniej wiecej tak http://bankfotek.pl/image/2011878.jpeg
 
 Zmieniamy ustawienia w zerowym i uruchamiamy *0-build.sh* aby rozpakowac i przygotować cały projekt
 
